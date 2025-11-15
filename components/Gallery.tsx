@@ -26,7 +26,7 @@ const Gallery: React.FC<GalleryProps> = ({ games }) => {
                         {games.map(game => (
                             <a 
                                 key={game.id} 
-                                href={`#/play/${game.id}`}
+                                href={`#/gallery/play/${game.id}`}
                                 className="group block bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-black hover:shadow-lg transition-all"
                             >
                                 <div className="aspect-[4/3] bg-gray-100 overflow-hidden relative">

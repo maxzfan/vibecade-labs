@@ -40,7 +40,7 @@ const Studio: React.FC<StudioProps> = ({ initialPrompt = '', onPublish }) => {
     if (!generatedCode) return;
     try {
       const newGameId = onPublish({ prompt, code: generatedCode });
-      const url = `${window.location.origin}${window.location.pathname}#/play/${newGameId}`;
+      const url = `${window.location.origin}${window.location.pathname}#/gallery/play/${newGameId}`;
       setPublishedUrl(url);
     } catch (e) {
       console.error("Error publishing game:", e);
